@@ -1,11 +1,19 @@
 import { useState } from "react";
 import Alert from "./components/Alert";
 import Button from "./components/Button";
+import ListGroup from "./components/ListGroup";
 
 function App() {
   const [alertVisible, setAlertVisibility] = useState(false);
+  const groups = ["one", "two", "three"];
+
   return (
     <div>
+      <ListGroup
+        heading="List"
+        items={groups}
+        onSelectItem={() => {}}
+      ></ListGroup>
       {alertVisible && (
         <Alert onClose={() => setAlertVisibility(false)}>My alert</Alert>
       )}
@@ -17,6 +25,5 @@ function App() {
 }
 
 export default App;
-
 
 // https://github.com/mosh-hamedani/react-course-part1
