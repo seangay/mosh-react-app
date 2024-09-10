@@ -1,17 +1,21 @@
 import { useState } from "react";
-import Like from "./components/Like";
+import ExpandableText from "./components/ExpandableText";
 
 function App() {
-  const [alertVisible, setAlertVisibility] = useState(false);
-  const groups = ["one", "two", "three"];
+  // const [alertVisible, setAlertVisibility] = useState(false);
+
+  // const groups = ["one", "two", "three"];
 
   return (
     <div>
-      <Like
-        onClick={() => {
-          console.log("clicked");
-        }}
-      />
+      <ExpandableText>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem
+        illo totam sit optio tenetur delectus assumenda possimus eveniet earum
+        ducimus commodi aliquid nobis maxime nemo vitae, cum impedit illum enim?
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem
+        illo totam sit optio tenetur delectus assumenda possimus eveniet earum
+        ducimus commodi aliquid nobis maxime nemo vitae, cum impedit illum enim?
+      </ExpandableText>
     </div>
   );
 }
