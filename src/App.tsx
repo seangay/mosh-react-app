@@ -1,6 +1,6 @@
 import { useState } from "react";
 import Alert from "./components/Alert";
-import Button from "./components/Button";
+import Button from "./components/Button/Button";
 import ListGroup from "./components/ListGroup";
 import { BsFillCalendarFill } from "react-icons/bs";
 
@@ -19,7 +19,7 @@ function App() {
       {alertVisible && (
         <Alert onClose={() => setAlertVisibility(false)}>My alert</Alert>
       )}
-      <Button color="light" onClick={() => setAlertVisibility(true)}>
+      <Button color="primary" onClick={() => setAlertVisibility(true)}>
         I have a button
       </Button>
     </div>
