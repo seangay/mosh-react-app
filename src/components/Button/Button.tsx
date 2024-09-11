@@ -17,7 +17,7 @@ const Button = ({ children, color = "primary", onClick }: Props) => {
   return (
     <button
       type="button"
-      className={[styles.btn, styles["btn-" + color]].join(" ")}
+      className={["btn", "btn-" + color].join(" ")}
       onClick={onClick}
     >
       {children}
